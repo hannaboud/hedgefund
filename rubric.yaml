@@ -1,0 +1,42 @@
+# AI Shadow Beneficiaries Fund — Rubric v2 (hybrid systematic)
+# Scores computed mechanically from data via percentile ranks, except
+# 'automatability' (set once per sub-industry by PM team, not per company).
+formation_date: "2024-01-02"
+
+criteria:
+  cost_structure:
+    max_points: 35
+    signals:
+      labor_sga_share:      {max: 15, method: percentile, source: "SG&A % of revenue, FY2023 10-K"}
+      automatability:       {max: 15, method: industry_map}
+      rev_per_employee_gap: {max: 5,  method: percentile_inverse, source: "revenue/employee vs universe"}
+  adoption_evidence:
+    max_points: 30
+    signals:
+      deployed_use_cases:   {max: 16, method: percentile, source: "AI/automation intensity, 2023 calls & disclosures"}
+      vendor_capex:         {max: 14, method: binary_scaled, source: "named AI vendor deal or tech-capex program pre-2024"}
+  not_crowded:
+    max_points: 20
+    signals:
+      valuation_vs_peers:   {max: 8, method: percentile_inverse, source: "fwd P/E vs universe, Jan 2024"}
+      absent_from_baskets:  {max: 6, method: binary, source: "not in BOTZ/AIQ/IRBO early 2024"}
+      no_sellside_ai:       {max: 6, method: percentile_inverse, source: "pre-2024 AI press-coverage volume"}
+  industry_structure:
+    max_points: 15
+    signals:
+      adoption_lead:        {max: 8, method: within_sector_rank, source: "reuses deployed_use_cases"}
+      pricing_power:        {max: 7, method: percentile, source: "gross margin level+stability 2019-23"}
+
+# PM-set automatability by sub-industry (0-15). PROPOSED DEFAULTS - team to ratify:
+automatability_map:
+  freight_broker: 15      # quoting/booking/tracking = cognitive, repetitive
+  parcel_3pl: 12          # routing, warehouse ops, customer service
+  trucking: 9             # driver-heavy; back office smaller share
+  railroad: 7             # asset-heavy; inspection/dispatch automatable
+  ag_equipment: 11        # precision ag embeds AI into product AND ops
+  crop_science: 8         # R&D discovery benefits; long cycles
+  commodity_processing: 6 # costs are commodities and logistics, not labor
+  irrigation_infra: 10    # remote monitoring, precision scheduling
+
+crowding_penalty: {multiplier: 0.5}
+portfolio: {inclusion_threshold: 55, weighting: score, max_position: 0.15}

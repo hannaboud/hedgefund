@@ -1,0 +1,23 @@
+ticker,company,sector,subindustry,labor_sga_share,automatability,rev_per_employee_gap,deployed_use_cases,vendor_capex,valuation_vs_peers,absent_from_baskets,no_sellside_ai,adoption_lead,pricing_power,ai_priced,composite
+CHRW,C.H. Robinson,logistics,freight_broker,15.0,15,0.7,12.0,0,2.7,6,6.0,5.3,3.5,0,66.2
+EXPD,Expeditors,logistics,freight_broker,14.2,15,2.7,4.0,0,0.9,6,6.0,1.3,7.0,0,57.1
+JBHT,J.B. Hunt,logistics,trucking,9.8,9,3.4,16.0,0,0.9,6,6.0,7.3,3.5,0,61.9
+ODFL,Old Dominion,logistics,trucking,4.5,9,3.6,4.0,0,0.4,6,6.0,1.3,7.0,0,41.8
+XPO,XPO,logistics,trucking,7.5,9,4.1,8.0,0,1.6,6,6.0,3.3,3.5,0,49.0
+GXO,GXO Logistics,logistics,parcel_3pl,7.5,12,5.0,16.0,14,3.8,6,6.0,7.3,3.5,0,81.1
+KNX,Knight-Swift,logistics,trucking,5.2,9,4.5,4.0,0,1.6,6,6.0,1.3,3.5,0,41.1
+UPS,UPS,logistics,parcel_3pl,11.6,12,4.3,16.0,14,3.8,6,6.0,7.3,3.5,0,84.5
+FDX,FedEx,logistics,parcel_3pl,6.0,12,4.8,8.0,0,5.3,6,6.0,3.3,3.5,0,54.9
+UNP,Union Pacific,logistics,railroad,1.5,7,1.6,12.0,0,2.2,6,6.0,5.3,7.0,0,48.6
+CSX,CSX,logistics,railroad,2.2,7,2.3,8.0,0,3.8,6,6.0,3.3,7.0,0,45.6
+R,Ryder,logistics,parcel_3pl,7.5,12,3.9,12.0,14,6.7,6,6.0,5.3,3.5,0,76.9
+DE,Deere,agriculture,ag_equipment,3.0,11,1.4,16.0,14,6.0,6,0.0,6.8,7.0,0,71.2
+AGCO,AGCO,agriculture,ag_equipment,8.2,11,3.0,16.0,14,7.5,6,6.0,6.8,3.5,0,82.0
+CNH,CNH Industrial,agriculture,ag_equipment,10.5,11,2.0,16.0,14,8.0,6,6.0,6.8,3.5,0,83.8
+CTVA,Corteva,agriculture,crop_science,13.5,8,1.1,8.0,0,3.8,6,6.0,3.2,7.0,0,56.6
+NTR,Nutrien,agriculture,commodity_processing,0.8,6,0.9,4.0,0,6.0,6,6.0,1.6,0.0,0,31.3
+BG,Bunge,agriculture,commodity_processing,3.8,6,0.2,4.0,0,7.5,6,6.0,1.6,0.0,0,35.1
+ADM,ADM,agriculture,commodity_processing,11.6,6,0.5,4.0,0,6.7,6,6.0,1.6,0.0,0,42.4
+LNN,Lindsay Corp,agriculture,irrigation_infra,6.8,10,2.5,12.0,0,2.7,6,6.0,4.4,7.0,0,57.4
+VMI,Valmont,agriculture,irrigation_infra,12.8,10,3.2,16.0,14,4.7,6,6.0,6.8,3.5,0,83.0
+FMC,FMC,agriculture,crop_science,9.0,8,1.8,12.0,0,5.3,6,6.0,4.4,0.0,0,52.5
